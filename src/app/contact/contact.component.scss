@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+.contato {
+  @include flex-container(column);
+  padding: 50px;
+  background-color: $gray21;
+  color: $white;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+
+.list {
+  display: flex;
+
+  &__item {
+    padding: 20px;
+  }
+}
+
+@include sm {
+  .btn-secundary {
+    width: 200px;
+    height: 70px;
+    padding: 6px;
+    font-size: 28px;
+    transition: 1s ease;
+  }
+}

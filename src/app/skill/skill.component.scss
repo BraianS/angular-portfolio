@@ -1,0 +1,65 @@
+@import "mixins";
+@import "variables";
+
+.skill {
+  @include flex-container(column);
+  padding: 4rem 0 4rem 0;
+
+  &__heading {
+    align-self: center;
+    text-align: center;
+    color: $white;
+  }
+
+  &_title {
+    font-size: $font-size-h2;
+    text-transform: uppercase;
+    color: $gray21;
+  }
+
+  &__paragraph {
+    margin-bottom: 10px;
+    color: $gray21;
+    font-size: $paragraph;
+  }
+}
+
+.list {
+  $this: &;
+  @include flex-container(row);
+  padding: 15px;
+
+  &__item {
+    @include flex-container(column);
+  }
+
+  &__label {
+    position: relative;
+    width: 140px;
+    height: 49px;
+    line-height: 49px;
+    border-radius: 17px;
+    margin-top: 20px;
+    color: $white;
+    background: $blue;
+    text-align: center;
+    visibility: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -8px;
+      width: 0;
+      height: 0;
+      border-bottom: 8px solid $blue;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+    }
+  }
+
+  &--visible:hover #{$this}__label {
+    visibility: visible;
+  }
+}

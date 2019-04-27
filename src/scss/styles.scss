@@ -1,0 +1,29 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "buttons";
+@import "reset";
+@import "animations";
+@import "variables";
+
+body {
+  overflow-x: hidden;
+  font-family: $font-open-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.gray {
+  color: $gray21;
+  font-weight: 700;
+}
+
+.underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: $blue;
+  margin: 20px auto 20px;
+}

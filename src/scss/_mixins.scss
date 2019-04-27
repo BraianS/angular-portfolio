@@ -1,0 +1,68 @@
+@mixin flex-container($flexdirection,$justifycontent:false){
+
+    @if ($justifycontent is not false){
+        justify-content: $justifycontent
+    }
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $flexdirection;
+}
+
+@mixin grid-template {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+}
+
+@mixin animation-delay($element){
+    @for $i from 1 through $element {
+        &:nth-child(#{$i}) {
+            animation-delay: (#{$i*0.4s});
+        }
+    }
+}
+
+@mixin grid-template($line,$column){
+    display: grid;
+    grid-template-columns: repeat($line,$column);
+    grid-template-row:300px
+}
+
+@mixin xs{
+    @media (min-width:576px){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media (min-width:768px){
+        @content;
+    }
+}
+
+@mixin md{
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin  sm-max {
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+@mixin sm-and-md {
+    @media only screen and (min-width:768.1px) and (max-width:991px) {
+        @content;
+    }
+}

@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+.about {
+  height: 100vh;
+  @include flex-container(row);
+  background-color: $blue;
+
+  &__details {
+    flex-basis: 50%;
+    color: $white;
+  }
+
+  &__title {
+    color: $white;
+    font-size: $font-size-h1;
+  }
+
+  &__paragraph {
+    color: $white;
+    font-size: $paragraph;
+    margin-bottom: 15px;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 250px;
+    widows: 250px;
+    box-shadow: 10px -10px $box-shadow;
+  }
+}

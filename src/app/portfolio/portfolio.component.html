@@ -1,0 +1,23 @@
+<section class="portfolio" id="portfolio" >
+  <div class="portfolio__heading" [@scrollAnimation]="state">
+    <h2 class="portfolio__title">Portfolio</h2>
+  </div>
+  <div class="underline"></div>
+  <div class="container" >
+    <div class="grid"  [@scrollAnimation]="state">
+      <figure class="photo photo--wrapper img">
+        <div class="photo__img" alt="projeto 1"></div>
+        <div class="overlay">
+          <h4 class="overlay__title">{{title}}</h4>
+          <p class="overlay__paragraph">{{paragraph}}</p>
+          <ul class="list">
+            <li class="list__item" *ngFor="let l of list"><span class="list__tag">{{l.tool}}</span></li>
+          </ul>
+         <div class="overlay__icon">
+          <a class="fab fa-github fa-4x" href="https://github.com/BraianS/MangasTech"></a>
+         </div>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>

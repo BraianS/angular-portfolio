@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+}
