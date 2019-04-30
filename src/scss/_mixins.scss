@@ -37,6 +37,12 @@
     }
 }
 
+@mixin xs-max {
+    @media (max-width:575px){
+        @content;
+    }
+}
+
 @mixin sm{
     @media (min-width:768px){
         @content;

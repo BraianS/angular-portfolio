@@ -24,8 +24,18 @@
 
   &__img {
     border-radius: 50%;
-    height: 250px;
-    widows: 250px;
+    height: auto;
+    max-width: 250px;
     box-shadow: 10px -10px $box-shadow;
+    transition: 1s ease-in;
+  }
+}
+
+@include xs-max {
+  .about {
+    &__img {
+      max-width: 160px;
+      transition: 1s ease;
+    }
   }
 }
