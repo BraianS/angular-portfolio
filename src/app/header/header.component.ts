@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
     console.log(`scrolling to ${id}`);
     let el = document.getElementById(id);
     el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    this.isNavOpen = false;
   }
 
   ngOnInit() {
