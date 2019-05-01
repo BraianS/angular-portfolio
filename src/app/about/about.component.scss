@@ -37,5 +37,10 @@
       max-width: 160px;
       transition: 1s ease;
     }
+
+    &__details {
+      flex-basis: 90%;
+      @include flex-container(column);
+    }
   }
 }
