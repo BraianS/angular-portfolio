@@ -1,13 +1,12 @@
 @mixin flex-container($flexdirection,$justifycontent:false){
 
-    @if ($justifycontent is not false){
-        justify-content: $justifycontent
+    @if $justifycontent { justify-content: $justifycontent;}
+    @else {
+        justify-content: center;
     }
-    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     flex-direction: $flexdirection;
 }
 
