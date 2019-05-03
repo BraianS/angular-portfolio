@@ -30,44 +30,34 @@
     grid-template-row:300px
 }
 
-@mixin xs{
-    @media (min-width:576px){
-        @content;
+//Media query to use breakpoints
+@mixin mq($breakpoint, $type: min) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map_get($breakpoints, $breakpoint);
+        @if $type == max {
+            $breakpoint-value: $breakpoint-value - 1px;
+        }
+        @media (#{$type}-width: $breakpoint-value) {
+            @content;
+        }
     }
 }
 
-@mixin xs-max {
-    @media (max-width:575px){
-        @content;
-    }
-}
+//Media query to use the screen with minimum and maximum size
+@mixin mq-between($lower,$upper) {
+    @if map-has-key($breakpoints,$lower) and map-has-key($breakpoints, $upper) {
+        $lower-breakpoint:map-get($breakpoints, $lower);
+        $upper-breakpoint:map-get($breakpoints, $upper);
 
-@mixin sm{
-    @media (min-width:768px){
-        @content;
-    }
-}
-
-@mixin md{
-    @media (min-width:992px){
-        @content;
-    }
-}
-
-@mixin lg {
-    @media (min-width:1200px) {
-        @content;
-    }
-}
-
-@mixin  sm-max {
-    @media (max-width:768px){
-        @content;
-    }
-}
-
-@mixin sm-and-md {
-    @media only screen and (min-width:768.1px) and (max-width:991px) {
-        @content;
+        @media (min-width:$lower-breakpoint) and (max-width:($upper-breakpoint - 1)) {
+            @content;
+        }
+    } else {
+       @if (map-has-key($breakpoints, $lower ) == false) {
+        @warn 'Your breakpoint was invalid: #{$lower}.';
+       }
+       @if (map-has-key($breakpoints, $upper ) == false) {
+        @warn 'Your breakpoint was invalid: #{$upper}.';
+       }
     }
 }

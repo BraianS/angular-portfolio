@@ -22,3 +22,12 @@ $overlay: rgba(32, 32, 32, 0.75);
 
 //Font
 $font-open-serif: "Opens Sans", sans-serif;
+
+//Screens for use in media queries
+$breakpoints : (
+    xs:0, // Extra small screen / phone
+    sm:544px, // Small screen / phone
+    md:768px, // Medium screen / tablet
+    lg:992px, //Large screen / desktop
+    xl:1200, // Extra large screen / wide desktop
+);

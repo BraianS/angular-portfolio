@@ -31,7 +31,7 @@
   }
 }
 
-@include xs-max {
+@include mq(sm, max){
   .about {
     &__img {
       max-width: 160px;

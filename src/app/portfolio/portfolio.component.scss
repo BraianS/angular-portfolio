@@ -101,37 +101,37 @@
   margin-left: auto;
 }
 
-@include xs {
+@include mq(sm,min) {
   .container {
     max-width: 540px;
   }
 }
 
-@include sm {
+@include mq(md,min) {
   .container {
     max-width: 720px;
   }
 }
 
-@include md {
+@include mq(lg,min) {
   .container {
     max-width: 960px;
   }
 }
 
-@include lg {
+@include mq(xl,min) {
   .container {
     max-width: 1140px;
   }
 }
 
-@include sm-and-md {
+@include mq-between(md,lg) {
   .grid {
     @include grid-template(2, 1fr);
   }
 }
 
-@include sm-max {
+@include mq(md,max) {
   .grid {
     @include grid-template(1, 1fr);
   }

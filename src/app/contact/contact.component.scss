@@ -20,7 +20,7 @@
   }
 }
 
-@include sm {
+@include mq-between(md,lg) {
   .btn-secondary {
     width: 200px;
     height: 70px;
