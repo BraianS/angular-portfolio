@@ -34,14 +34,14 @@ header {
     font-size: 2rem;
     font-weight: 300;
     transform: translateX(-100rem);
-    animation: slideIn 0.5s forwards;
+    @include animation-delay(1);
   }
 
   &__item {
-    animation: slideIn 0.5s forwards;
     transform: translateX(100rem);
-    padding: 5px;
-    @include animation-delay(5)
+    padding: 5px 10px;
+    @include animation-delay(5);
+    cursor: pointer;
   }
 
   &--hightlighted {

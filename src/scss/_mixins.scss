@@ -19,7 +19,7 @@
 @mixin animation-delay($element){
     @for $i from 1 through $element {
         &:nth-child(#{$i}) {
-            animation-delay: (#{$i*0.4s});
+            animation: slideIn (#{$i*0.2s}) forwards;
         }
     }
 }
