@@ -1,5 +1,6 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { scrollAnimation } from '../shared/animations';
+import { ScrollAnimationComponent } from '../shared/scroll-animation.component';
 
 @Component({
   selector: 'portfolio',
@@ -7,9 +8,7 @@ import { scrollAnimation } from '../shared/animations';
   styleUrls: ['./portfolio.component.scss'],
   animations: [scrollAnimation]
 })
-export class PortfolioComponent implements OnInit {
-
-  constructor(public el: ElementRef) { }
+export class PortfolioComponent extends ScrollAnimationComponent implements OnInit {
 
   title: string = "MangasTech";
   paragraph: string = "Projeto para organizar mangas e ler seus mangas preferidos";
@@ -21,20 +20,6 @@ export class PortfolioComponent implements OnInit {
     { tool: "BootStrap" },
   ];
 
-  public state: string = 'hide';
-
   ngOnInit() {
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    const componentPosition = this.el.nativeElement.offsetTop;
-    const scrollPosition = window.pageYOffset + ((window.innerHeight * 3) / 4);
-
-    if (scrollPosition >= componentPosition) {
-      this.state = 'show'
-    } else {
-      this.state = 'hide'
-    }
   }
 }

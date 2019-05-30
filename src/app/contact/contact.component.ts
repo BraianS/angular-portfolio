@@ -1,5 +1,6 @@
-import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { scrollAnimation } from '../shared/animations';
+import { ScrollAnimationComponent } from '../shared/scroll-animation.component';
 
 @Component({
   selector: 'contact',
@@ -9,24 +10,9 @@ import { scrollAnimation } from '../shared/animations';
     scrollAnimation
   ]
 })
-export class ContactComponent implements OnInit {
-
-  constructor(public el: ElementRef) { }
+export class ContactComponent extends ScrollAnimationComponent implements OnInit { 
 
   ngOnInit() {
   }
 
-  state = 'hide';
-
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    const componentPosition = this.el.nativeElement.offsetTop;
-    const scrollPosition = window.pageYOffset + ((window.innerHeight * 3) / 4);
-
-    if (scrollPosition >= componentPosition) {
-      this.state = 'show'
-    } else {
-      this.state = 'hide'
-    }
-  }
 }

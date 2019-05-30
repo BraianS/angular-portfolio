@@ -1,6 +1,6 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
-import { trigger, state, transition, animate, style } from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
 import { scrollAnimation } from '../shared/animations';
+import { ScrollAnimationComponent } from '../shared/scroll-animation.component';
 
 @Component({
   selector: 'skill',
@@ -10,26 +10,8 @@ import { scrollAnimation } from '../shared/animations';
     scrollAnimation
   ]
 })
-export class SkillComponent implements OnInit {
-
-  constructor(public el:ElementRef) { }
+export class SkillComponent extends ScrollAnimationComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  state = 'hide';
-
-  @HostListener('window:scroll',['$event'])
-  checkScroll(){
-    const componentPosition = this.el.nativeElement.offsetTop;
-    const scrollPosition = window.pageYOffset + ((window.innerHeight *3) /4 );
-
-    if(scrollPosition >= componentPosition){
-      this.state = 'show';
-    } else {
-      this.state = 'hide';
-    }
-
-  }
-
 }
