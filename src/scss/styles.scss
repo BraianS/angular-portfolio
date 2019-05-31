@@ -1,4 +1,14 @@
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+@font-face {
+  font-family: Roboto;
+  src: url("~roboto-fontface/fonts/roboto/Roboto-Bold.woff") format("woff"),
+    url("~roboto-fontface/fonts/roboto/Roboto-Bold.woff2") format("woff");
+  src: url("~roboto-fontface/fonts/roboto/Roboto-Regular.woff") format("woff"),
+    url("~roboto-fontface/fonts/roboto/Roboto-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
@@ -11,7 +21,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
 body {
   overflow-x: hidden;
-  font-family: $font-open-serif;
+  font-family: $font-roboto;
   box-sizing: border-box;
   height: 100%;
 }
