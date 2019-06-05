@@ -1,22 +1,51 @@
-import { HostListener, ElementRef, Injectable, Input } from '@angular/core';
+import { ElementRef, Injectable, AfterViewInit, OnDestroy, Output } from '@angular/core';
+import { Subscription, fromEvent } from 'rxjs';
 
 @Injectable()
-export class ScrollAnimationComponent {
+export class ScrollAnimationComponent implements AfterViewInit, OnDestroy {
 
     constructor(private _el: ElementRef) { }
 
-    @Input()
-    state = 'hide';
+    @Output()
+    state: string;
 
-    @HostListener('window:scroll', ['$event'])
-    checkScroll() {
-        const componentPosition = this._el.nativeElement.offsetTop;
-        const scrollPosition = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    componentPosition: number;
+    scrollPosition: number;
 
-        if (scrollPosition >= componentPosition) {
-            this.state = 'show';
-        } else {
-            this.state = 'hide';
+    subscribeScroll: Subscription;
+
+    onScroll() {
+        this.componentPosition = this._el.nativeElement.offsetTop;
+        this.scrollPosition = window.pageYOffset + ((window.innerHeight * 3) / 4);
+        this.checkState();
+    }
+
+    checkState() {
+        if (this.state = 'hide') {
+            if (this.scrollPosition >= this.componentPosition) {
+                this.state = 'show';
+                this.unsubscribe();
+            }
         }
+    }
+
+    subscribe() {
+        this.subscribeScroll = fromEvent(window, 'scroll')
+            .subscribe(() => this.onScroll());
+    }
+
+    unsubscribe() {
+        if (this.subscribeScroll) {
+            this.subscribeScroll.unsubscribe();
+        }
+    }
+
+    ngAfterViewInit() {
+        this.state = 'hide';
+        this.subscribe();
+    }
+
+    ngOnDestroy() {
+        this.unsubscribe();
     }
 }
