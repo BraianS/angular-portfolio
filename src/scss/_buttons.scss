@@ -17,12 +17,14 @@
 }
 
 .btn-secondary {
-  padding: 12px;
+  width: 250px;
+  height: 70px;
   font-size: 40px;
   border: 8px solid transparent;
   box-sizing: border-box;
   background-color: transparent;
   color: white;
+  transition: 1s ease;
 }
 
 .btn--color {
