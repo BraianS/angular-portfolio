@@ -1,10 +1,11 @@
-import { ElementRef, Injectable, AfterViewInit, OnDestroy, Output } from '@angular/core';
+import { ElementRef, Injectable, AfterViewInit, OnDestroy, Output, ChangeDetectorRef } from '@angular/core';
 import { Subscription, fromEvent } from 'rxjs';
 
 @Injectable()
 export class ScrollAnimationComponent implements AfterViewInit, OnDestroy {
 
-    constructor(private _el: ElementRef) { }
+    constructor(private _el: ElementRef,
+                private cdRef: ChangeDetectorRef) { }
 
     @Output()
     state: string;
@@ -40,8 +41,9 @@ export class ScrollAnimationComponent implements AfterViewInit, OnDestroy {
         }
     }
 
-    ngAfterViewInit() {
+    ngAfterViewInit() {       
         this.state = 'hide';
+        this.cdRef.detectChanges();
         this.subscribe();
     }
 
