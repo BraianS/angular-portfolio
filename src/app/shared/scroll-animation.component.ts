@@ -5,7 +5,7 @@ import { Subscription, fromEvent } from 'rxjs';
 export class ScrollAnimationComponent implements AfterViewInit, OnDestroy {
 
     constructor(private _el: ElementRef,
-                private cdRef: ChangeDetectorRef) { }
+                public cdRef: ChangeDetectorRef) { }
 
     @Output()
     state: string;

@@ -5,16 +5,16 @@
   <div class="underline"></div>
   <div class="container" >
     <div class="grid"  [@scrollAnimation]="state">
-      <figure class="photo photo--wrapper img">
-        <div class="photo__img" alt="projeto 1"></div>
+      <figure class="photo photo--wrapper" *ngFor="let portfolio of projectList">
+        <img class="photo__img" alt="projeto" [src]="portfolio.img">
         <div class="overlay">
-          <h4 class="overlay__title">{{title}}</h4>
-          <p class="overlay__paragraph">{{paragraph}}</p>
+          <h4 class="overlay__title">{{portfolio.title}}</h4>
+          <p class="overlay__paragraph">{{portfolio.paragraph}}</p>
           <ul class="list">
-            <li class="list__item" *ngFor="let l of list"><span class="list__tag">{{l.tool}}</span></li>
+            <li class="list__item" *ngFor="let tools of portfolio.tools"><span class="list__tag">{{tools.title}}</span></li>
           </ul>
          <div class="overlay__icon">
-          <a class="fab fa-github fa-4x" href="https://github.com/BraianS/MangasTech"></a>
+          <a class="fab fa-github fa-4x" href="{{portfolio.github}}"></a>
          </div>
         </div>
       </figure>

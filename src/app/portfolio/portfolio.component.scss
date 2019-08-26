@@ -27,7 +27,7 @@
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    object-fit: cover;
     transition: 1s;
     transform: scale(1);
   }
@@ -44,10 +44,6 @@
     background-color: $overlay;
     opacity: 1;
   }
-}
-
-.img .photo__img {
-  background-image: url("/assets/img/a.png");
 }
 
 .overlay {

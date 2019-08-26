@@ -1,0 +1,42 @@
+[
+    {
+        "title": "MangasTech",
+        "paragraph": "Projeto para organizar mangas e ler seus mangas preferidos",
+        "tools": [
+            {
+                "title": "Spring Boot"
+            },
+            {
+                "title": "AngularJS"
+            },
+            {
+                "title": "MySql"
+            },
+            {
+                "title": "BootStrap"
+            }
+        ],
+        "img": "/assets/img/a.png",
+        "github":"https://github.com/BraianS/MangasTech"
+    },
+    {
+        "title": "Ang Rss Reader",
+        "paragraph": "Simples Rss Reader criado com Angular 8",
+        "tools": [
+            {
+                "title": "Angular 8"
+            },
+            {
+                "title": "Bulma"
+            },
+            {
+                "title": "Font Awesome 5"
+            },
+            {
+                "title":"SCSS"
+            }
+        ],
+        "img":"/assets/img/ang-rss-reader.png",
+        "github":"https://github.com/BraianS/ang-rss-reader"
+    }
+]
