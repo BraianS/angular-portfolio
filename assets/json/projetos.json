@@ -1,0 +1,71 @@
+[
+    {
+        "title": "MangasTech",
+        "paragraph": "Projeto para organizar mangas e ler seus mangas preferidos",
+        "tools": [
+            {
+                "title": "Spring Boot"
+            },
+            {
+                "title": "AngularJS"
+            },
+            {
+                "title": "MySql"
+            },
+            {
+                "title": "BootStrap"
+            }
+        ],
+        "img": "./assets/img/mangasTech.png",
+        "github": "https://github.com/BraianS/MangasTech"
+    },
+    {
+        "title": "Ang Rss Reader",
+        "paragraph": "Simples Rss Reader criado com Angular 8",
+        "tools": [
+            {
+                "title": "Angular 8"
+            },
+            {
+                "title": "Bulma"
+            },
+            {
+                "title": "Font Awesome 5"
+            },
+            {
+                "title": "SCSS"
+            }
+        ],
+        "img": "./assets/img/ang-rss-reader.png",
+        "github": "https://github.com/BraianS/ang-rss-reader"
+    },
+    {
+        "title": "KanbanSpring",
+        "paragraph": "Full Stack Kanban App to create your account and organize your cards.",
+        "tools": [
+            {
+                "title": "Angular 9"
+            },
+            {
+                "title": "Angular Material"
+            },
+            {
+                "title": "MongoDB"
+            },
+            {
+                "title": "SCSS"
+            },
+            {
+                "title": "Spring Boot"
+            },
+            {
+                "title": "Spring Security"
+            },
+            {
+                "title": "JWT"
+            }
+        ],
+        "img": "./assets/img/kanbanSpring.gif",
+        "github": "https://github.com/BraianS/spring-security-angular-kanban-app"
+    }
+]
