@@ -5,8 +5,8 @@ This is my portfolio developed with Angular
 ## Install
 
 * [Install Node.js](https://nodejs.org/en/).
-* Install [Angular CLI: 7.3.8](https://www.npmjs.com/package/@angular/cli/v/7.3.8).
-  * Run `npm install -g @angular/cli` to install Globally or `npm install @angular/cli` to install locally. To install Install Specific Version (Example: 7.3.8) `npm install -g @angular/cli@7.3.8`.
+* Install [Angular CLI: 9.1.8](https://www.npmjs.com/package/@angular/cli/v/9.1.8).
+  * Run `npm install -g @angular/cli` to install Globally or `npm install @angular/cli` to install locally. To install Install Specific Version (Example: 9.1.8) `npm install -g @angular/cli@9.1.8`.
 * Clone this project repository.
 * Run `npm install` from project directory..
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
@@ -14,6 +14,8 @@ This is my portfolio developed with Angular
 ## Development server
 
 Run `ng serve --open` to open the project automatically in the url `http://localhost:4200`
+
+![portfolio](./src/assets/img/portfolio.png)
 
 ## Code scaffolding
 
@@ -38,9 +40,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * SCSS
 * Angular Animation
 * TypeScript
-* Angular CLI: 7.3.8
+* Angular CLI: 9.1.8
 * Node: 10.15.1
-* Angular: 7.2.13
+* Angular: 9.1.1
 * TSLint
 * ES6
 * Protractor
@@ -48,7 +50,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Contributing
 
-1. Contact me on twitter or by email.
 1. Clone this repository.
 1. Make a new branch.
 1. Commit and push your changes.
