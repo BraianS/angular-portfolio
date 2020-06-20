@@ -17,7 +17,7 @@
             }
         ],
         "img": "/assets/img/mangasTech.png",
-        "github":"https://github.com/BraianS/MangasTech"
+        "github": "https://github.com/BraianS/MangasTech"
     },
     {
         "title": "Ang Rss Reader",
@@ -33,10 +33,39 @@
                 "title": "Font Awesome 5"
             },
             {
-                "title":"SCSS"
+                "title": "SCSS"
             }
         ],
-        "img":"/assets/img/ang-rss-reader.png",
-        "github":"https://github.com/BraianS/ang-rss-reader"
+        "img": "/assets/img/ang-rss-reader.png",
+        "github": "https://github.com/BraianS/ang-rss-reader"
+    },
+    {
+        "title": "KanbanSpring",
+        "paragraph": "Full Stack Kanban App to create your account and organize your cards, move card to another column and upload your attachments.",
+        "tools": [
+            {
+                "title": "Angular 9"
+            },
+            {
+                "title": "Angular Material"
+            },
+            {
+                "title": "MongoDB"
+            },
+            {
+                "title": "SCSS"
+            },
+            {
+                "title": "Spring Boot"
+            },
+            {
+                "title": "Spring Security"
+            },
+            {
+                "title": "JWT"
+            }
+        ],
+        "img": "/assets/img/kanbanSpring.gif",
+        "github": "https://github.com/BraianS/spring-security-angular-kanban-app"
     }
 ]
