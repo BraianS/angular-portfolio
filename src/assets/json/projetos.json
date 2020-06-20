@@ -41,7 +41,7 @@
     },
     {
         "title": "KanbanSpring",
-        "paragraph": "Full Stack Kanban App to create your account and organize your cards, move card to another column and upload your attachments.",
+        "paragraph": "Full Stack Kanban App to create your account and organize your cards.",
         "tools": [
             {
                 "title": "Angular 9"
