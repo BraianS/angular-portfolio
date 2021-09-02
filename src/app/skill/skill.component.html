@@ -5,13 +5,10 @@
   </div>
   <div class="underline"></div>
   <ul class="list" [@scrollAnimation]="state">
-    <li class="list__item list--visible "><i class="fab fa-html5 fa-4x"></i><span class="list__label ">Html 5</span>
+    <li class="list__item list--visible "  *ngFor="let skill of skills"><i [class]="skill.icon"></i><span class="list__label ">{{skill.title}}</span>
     </li>
-    <li class="list__item list--visible"><i class="fab fa-java fa-4x "></i><span class="list__label">Java</span></li>
-    <li class="list__item list--visible"><i class="fab fa-git fa-4x "></i><span class="list__label">Git</span></li>
-    <li class="list__item list--visible"><i class="fab fa-css3-alt fa-4x "></i><span class="list__label">Css3</span>
-    </li>
+
   </ul>
-  <p class="skill__paragraph" [@scrollAnimation]="state">Atualmente aprendendo <strong>ANGULAR</strong></p>
+  <p class="skill__paragraph" [@scrollAnimation]="state">Atualmente aprendendo sobre <strong>MICROSERVICES</strong></p>
   <i class="fab fa-angular fa-2x fab--border"></i>
 </section>
