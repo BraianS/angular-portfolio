@@ -16,7 +16,7 @@
                 "title": "BootStrap"
             }
         ],
-        "img": "./assets/img/mangasTech.png",
+        "img": "/assets/img/mangasTech.png",
         "github": "https://github.com/BraianS/MangasTech"
     },
     {
@@ -36,7 +36,7 @@
                 "title": "SCSS"
             }
         ],
-        "img": "./assets/img/ang-rss-reader.png",
+        "img": "/assets/img/ang-rss-reader.png",
         "github": "https://github.com/BraianS/ang-rss-reader"
     },
     {
@@ -65,7 +65,36 @@
                 "title": "JWT"
             }
         ],
-        "img": "./assets/img/kanbanSpring.gif",
+        "img": "/assets/img/kanbanSpring.gif",
         "github": "https://github.com/BraianS/spring-security-angular-kanban-app"
+    },
+    {
+        "title":"Full Stack Spring Blog and Angular Blog",
+        "paragraph":"Build your own Blog with Spring Boot and Angular project",
+        "tools": [
+            {
+                "title":"Spring Boot 2.5.2"
+            },
+            {
+                "title":"Mysql"
+            },
+            {
+                "title":"jjwt"
+            },
+            {
+                "title":"Angular 12"
+            },
+            {
+                "title":"Bulma"
+            },
+            {
+                "title":"Font-Awesome Free"
+            },
+            {
+                "title":"Docker"
+            }
+        ],
+        "img":"/assets/img/full-stack-spring-blog-and-angular-blog.jpg",
+        "github": "https://github.com/BraianS/fullstack-spring-boot-and-angular"
     }
 ]
