@@ -21,7 +21,13 @@
 
   (self["webpackChunkangular_portfolio"] = self["webpackChunkangular_portfolio"] || []).push([["main"], {
     /***/
-    8255: function _(module) {
+    8255:
+    /*!*******************************************************!*\
+      !*** ./$_lazy_route_resources/ lazy namespace object ***!
+      \*******************************************************/
+
+    /***/
+    function _(module) {
       function webpackEmptyAsyncContext(req) {
         // Here Promise.resolve().then() is used instead of new Promise() to prevent
         // uncaught exception popping up in devtools
@@ -43,7 +49,13 @@
     },
 
     /***/
-    6698: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    6698:
+    /*!******************************************!*\
+      !*** ./src/app/about/about.component.ts ***!
+      \******************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -153,7 +165,13 @@
     },
 
     /***/
-    5041: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    5041:
+    /*!**********************************!*\
+      !*** ./src/app/app.component.ts ***!
+      \**********************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -251,7 +269,13 @@
     },
 
     /***/
-    6747: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    6747:
+    /*!*******************************!*\
+      !*** ./src/app/app.module.ts ***!
+      \*******************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -358,7 +382,13 @@
     },
 
     /***/
-    1563: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    1563:
+    /*!**********************************************!*\
+      !*** ./src/app/contact/contact.component.ts ***!
+      \**********************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -500,7 +530,13 @@
     },
 
     /***/
-    3482: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    3482:
+    /*!********************************************!*\
+      !*** ./src/app/header/header.component.ts ***!
+      \********************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -722,7 +758,13 @@
     },
 
     /***/
-    5574: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    5574:
+    /*!**************************************************!*\
+      !*** ./src/app/portfolio/portfolio.component.ts ***!
+      \**************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -949,7 +991,13 @@
     },
 
     /***/
-    6055: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    6055:
+    /*!**************************************!*\
+      !*** ./src/app/shared/animations.ts ***!
+      \**************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -986,7 +1034,13 @@
     },
 
     /***/
-    1552: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    1552:
+    /*!******************************************************!*\
+      !*** ./src/app/shared/scroll-animation.component.ts ***!
+      \******************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -1093,7 +1147,13 @@
     },
 
     /***/
-    4673: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    4673:
+    /*!******************************************!*\
+      !*** ./src/app/skill/skill.component.ts ***!
+      \******************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -1284,7 +1344,13 @@
     },
 
     /***/
-    2340: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    2340:
+    /*!*****************************************!*\
+      !*** ./src/environments/environment.ts ***!
+      \*****************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -1322,7 +1388,13 @@
     },
 
     /***/
-    4431: function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+    4431:
+    /*!*********************!*\
+      !*** ./src/main.ts ***!
+      \*********************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
