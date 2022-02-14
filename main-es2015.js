@@ -401,7 +401,7 @@ class PortfolioComponent extends _shared_scroll_animation_component__WEBPACK_IMP
         this.projectList = [];
     }
     ngOnInit() {
-        this.http.get("/assets/json/projetos.json").subscribe((portfolio) => {
+        this.http.get("./assets/json/projetos.json").subscribe((portfolio) => {
             this.projectList = portfolio;
         });
     }
@@ -556,7 +556,7 @@ class SkillComponent extends _shared_scroll_animation_component__WEBPACK_IMPORTE
         this.skills = [];
     }
     ngOnInit() {
-        this.http.get("/assets/json/skills.json").subscribe(skills => {
+        this.http.get("./assets/json/skills.json").subscribe(skills => {
             this.skills = skills;
         });
     }

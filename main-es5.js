@@ -918,7 +918,7 @@
           value: function ngOnInit() {
             var _this2 = this;
 
-            this.http.get("/assets/json/projetos.json").subscribe(function (portfolio) {
+            this.http.get("./assets/json/projetos.json").subscribe(function (portfolio) {
               _this2.projectList = portfolio;
             });
           }
@@ -1251,7 +1251,7 @@
           value: function ngOnInit() {
             var _this5 = this;
 
-            this.http.get("/assets/json/skills.json").subscribe(function (skills) {
+            this.http.get("./assets/json/skills.json").subscribe(function (skills) {
               _this5.skills = skills;
             });
           }
