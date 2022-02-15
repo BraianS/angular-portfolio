@@ -16,7 +16,7 @@
                 "title": "BootStrap"
             }
         ],
-        "img": "/assets/img/mangasTech.png",
+        "img": "./assets/img/mangasTech.png",
         "github": "https://github.com/BraianS/MangasTech"
     },
     {
@@ -36,7 +36,7 @@
                 "title": "SCSS"
             }
         ],
-        "img": "/assets/img/ang-rss-reader.png",
+        "img": "./assets/img/ang-rss-reader.png",
         "github": "https://github.com/BraianS/ang-rss-reader"
     },
     {
@@ -65,7 +65,7 @@
                 "title": "JWT"
             }
         ],
-        "img": "/assets/img/kanbanSpring.gif",
+        "img": "./assets/img/kanbanSpring.gif",
         "github": "https://github.com/BraianS/spring-security-angular-kanban-app"
     },
     {
@@ -94,7 +94,7 @@
                 "title":"Docker"
             }
         ],
-        "img":"/assets/img/full-stack-spring-blog-and-angular-blog.jpg",
+        "img":"./assets/img/full-stack-spring-blog-and-angular-blog.jpg",
         "github": "https://github.com/BraianS/fullstack-spring-boot-and-angular"
     }
 ]
