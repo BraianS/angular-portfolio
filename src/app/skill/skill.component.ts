@@ -20,7 +20,7 @@ export class SkillComponent extends ScrollAnimationComponent implements OnInit {
   skills:any = [];
 
   ngOnInit() {
-    this.http.get("/assets/json/skills.json").subscribe(skills => {
+    this.http.get("./assets/json/skills.json").subscribe(skills => {
       this.skills = skills;
     });
   }
