@@ -16,7 +16,7 @@
                 "title": "BootStrap"
             }
         ],
-        "img": "./assets/img/mangasTech.png",
+        "img": "./assets/img/mangasTech.webp",
         "github": "https://github.com/BraianS/MangasTech"
     },
     {
@@ -65,7 +65,7 @@
                 "title": "JWT"
             }
         ],
-        "img": "./assets/img/kanbanSpring.gif",
+        "img": "./assets/img/kanbanSpring.webp",
         "github": "https://github.com/BraianS/spring-security-angular-kanban-app"
     },
     {
