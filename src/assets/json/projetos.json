@@ -96,5 +96,34 @@
         ],
         "img":"./assets/img/full-stack-spring-blog-and-angular-blog.jpg",
         "github": "https://github.com/BraianS/fullstack-spring-boot-and-angular"
+    },
+    {
+        "title":"Goalbit Android",
+        "paragraph":"Habit tracker app created on Android",
+        "tools": [
+            {
+                "title":"Kotlin"
+            },
+            {
+                "title":"Android Studio"
+            },
+            {
+                "title":"Java 17 version"
+            },
+            {
+                "title":"Firebase"
+            },
+            {
+                "title":"Mpchart"
+            },
+            {
+                "title":"Material Design Components"
+            },
+            {
+                "title":"IconPack"
+            }
+        ],
+        "img":"./assets/img/goalbit-android.jpg",
+        "github": "https://github.com/BraianS/goalbit-android"
     }
 ]
