@@ -17,6 +17,10 @@ Run `ng serve --open` to open the project automatically in the url `http://local
 
 ![portfolio](./src/assets/img/portfolio.png)
 
+## Lighthouse
+
+![lighthouse](./src/assets/img/Lighthouse.png)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
