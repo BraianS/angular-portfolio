@@ -1,11 +1,11 @@
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 
 @font-face {
   font-family: Roboto;
-  src: url("~roboto-fontface/fonts/roboto/Roboto-Bold.woff") format("woff"),
-    url("~roboto-fontface/fonts/roboto/Roboto-Bold.woff2") format("woff");
-  src: url("~roboto-fontface/fonts/roboto/Roboto-Regular.woff") format("woff"),
-    url("~roboto-fontface/fonts/roboto/Roboto-Regular.woff2") format("woff2");
+  src: url("roboto-fontface/fonts/roboto/Roboto-Bold.woff") format("woff"),
+    url("roboto-fontface/fonts/roboto/Roboto-Bold.woff2") format("woff");
+  src: url("roboto-fontface/fonts/roboto/Roboto-Regular.woff") format("woff"),
+    url("roboto-fontface/fonts/roboto/Roboto-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
